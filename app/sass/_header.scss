@@ -1,0 +1,59 @@
+@import "./variables";
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+    &_item {
+        margin-left: 15px;
+        line-height: 18px;
+        border-bottom: 2px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: #007bff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            line-height: 34px;
+            margin: 10px 0;
+        }
+    }
+
+    @media (max-width: $breakpoint-md) {
+        left: -100%;
+        top: 48px;
+        position: fixed;
+        height: calc(100vh - 48px);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 30px;
+
+        &-visible {
+            left: 0;
+            transition: 0.5s;
+        }
+    }
+}
+.menu-button {
+    display: none;
+    font-size: 25px;
+
+    &-active {
+        transition: 0.4s;
+        transform: rotate(180deg);
+    }
+
+    @media (max-width: $breakpoint-md) {
+        display: block;
+    }
+}
