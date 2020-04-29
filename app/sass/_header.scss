@@ -1,5 +1,8 @@
 @import "./variables";
 
+header{
+    padding-top: 15px;
+}
 .nav-list {
     margin: 0;
     padding: 0;
@@ -28,9 +31,9 @@
 
     @media (max-width: $breakpoint-md) {
         left: -100%;
-        top: 48px;
+        top: 63px;
         position: fixed;
-        height: calc(100vh - 48px);
+        height: calc(100vh - 63px);
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -41,10 +44,13 @@
         &-visible {
             left: 0;
             transition: 0.5s;
+            background-color: rgba(255, 255, 255, 0.9); 
+            z-index: 3;
         }
     }
 }
 .menu-button {
+    color: $button-hover;
     display: none;
     font-size: 25px;
 
