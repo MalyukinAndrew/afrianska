@@ -48,35 +48,35 @@ header {
     .menu-button {
       display: block; } }
 
-.hero-section {
+.hero-wrapper {
   background-image: url("../img/illustrationhero.png");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: right;
   height: calc(100vh - 63px);
   color: #1F3F68; }
-  .hero-section h1 {
+  .hero-wrapper h1 {
     font-weight: 700;
     font-size: 64px;
     line-height: 74px;
     letter-spacing: 0.04em;
     margin-bottom: 32px; }
     @media (max-width: 768px) {
-      .hero-section h1 {
+      .hero-wrapper h1 {
         font-size: 40px;
         line-height: 45px; } }
-  .hero-section p {
+  .hero-wrapper p {
     font-weight: 400;
     padding: 0;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 71px; }
   @media (max-width: 768px) {
-    .hero-section {
+    .hero-wrapper {
       background-image: none;
       text-align: center; } }
 
-.hero-section_gradient {
+.hero_gradient {
   position: absolute;
   bottom: 0;
   left: 0;
