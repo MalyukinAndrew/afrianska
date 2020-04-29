@@ -1,4 +1,4 @@
-.hero-section {
+.hero-wrapper {
     background-image: url("../img/illustrationhero.png");
     background-repeat: no-repeat;
     background-size: 50%;
@@ -30,7 +30,7 @@
         text-align: center;
     }
 }
-.hero-section_gradient {
+.hero_gradient {
     position: absolute;
     bottom: 0;
     left: 0;
