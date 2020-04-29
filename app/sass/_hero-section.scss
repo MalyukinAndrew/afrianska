@@ -1,0 +1,42 @@
+.hero-section {
+    background-image: url("../img/illustrationhero.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    height: calc(100vh - 63px);
+    color: $primary-color;
+    h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        margin-bottom: 32px;
+        
+        @media (max-width: $breakpoint-md){
+            font-size: 40px;
+            line-height:45px;
+        }
+    }
+    p {
+        font-weight: 400;
+        padding: 0;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 71px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        background-image: none;
+        text-align: center;
+    }
+}
+.hero-section_gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 63px);
+    opacity: 0.2;
+    background: linear-gradient(0deg, #98c3e8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    z-index: -1;
+}
