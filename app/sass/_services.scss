@@ -1,0 +1,51 @@
+.services {
+    margin-top: 180px;
+    h2 {
+        color: $secondary-color;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 46px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary-color;
+    }
+    p {
+        color: $primary-color;
+    }
+    a {
+        text-decoration: none;
+        color: $button-color;
+
+        &:hover {
+            color: $button-hover;
+        }
+    }
+
+    &-wrapper{
+        position: relative;
+    }
+
+    &-cards{
+        position: absolute;
+        top: 0;
+
+        @media (max-width: $breakpoint-md) {
+            position: initial;
+            margin-top: 30px;
+        }
+    }
+
+    &-cards-item {
+        margin-bottom: 100px;
+        padding:48px;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        img{
+            display: block;
+            margin: 0 auto 40px auto;
+            overflow: hidden;
+        }
+    }
+}
