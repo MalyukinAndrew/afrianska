@@ -28,12 +28,13 @@
     }
 
     &-cards{
-        position: absolute;
-        top: 0;
+        position: initial;
+        margin-top: 30px;
 
-        @media (max-width: $breakpoint-md) {
-            position: initial;
-            margin-top: 30px;
+        @media (min-width: $breakpoint-md) {
+            position: absolute;
+            top: 0;
+            margin: 0;
         }
     }
 

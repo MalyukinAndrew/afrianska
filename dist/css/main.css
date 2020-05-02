@@ -112,12 +112,13 @@ header {
   .services-wrapper {
     position: relative; }
   .services-cards {
-    position: absolute;
-    top: 0; }
-    @media (max-width: 768px) {
+    position: initial;
+    margin-top: 30px; }
+    @media (min-width: 768px) {
       .services-cards {
-        position: initial;
-        margin-top: 30px; } }
+        position: absolute;
+        top: 0;
+        margin: 0; } }
   .services-cards-item {
     margin-bottom: 100px;
     padding: 48px;
