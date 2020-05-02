@@ -9,11 +9,29 @@ header{
     display: flex;
     list-style: none;
 
+    left: -100%;
+    top: 63px;
+    position: fixed;
+    height: calc(100vh - 63px);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+
+    &-visible {
+        left: 0;
+        transition: 0.5s;
+        background-color: rgba(255, 255, 255, 0.9); 
+        z-index: 3;
+    }
+
     &_item {
-        margin-left: 15px;
-        line-height: 18px;
         border-bottom: 2px solid transparent;
         transition: 0.3s;
+        line-height: 34px;
+        margin: 10px 0;
 
         &:hover {
             border-color: #007bff;
@@ -23,35 +41,22 @@ header{
             text-decoration: none;
         }
 
-        @media (max-width: $breakpoint-md) {
-            line-height: 34px;
-            margin: 10px 0;
+        @media (mIN-width: $breakpoint-md) {
+            line-height: 18px;
+            margin: 0 0 0 15px;
         }
     }
 
-    @media (max-width: $breakpoint-md) {
-        left: -100%;
-        top: 63px;
-        position: fixed;
-        height: calc(100vh - 63px);
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        font-size: 30px;
-
-        &-visible {
-            left: 0;
-            transition: 0.5s;
-            background-color: rgba(255, 255, 255, 0.9); 
-            z-index: 3;
-        }
+    @media (min-width: $breakpoint-md) {
+       position: initial;
+       height: unset;
+       flex-direction: row;
+       font-size: inherit;
     }
 }
 .menu-button {
     color: $button-hover;
-    display: none;
+    display: block;
     font-size: 25px;
 
     &-active {
@@ -59,7 +64,7 @@ header{
         transform: rotate(180deg);
     }
 
-    @media (max-width: $breakpoint-md) {
-        display: block;
+    @media (min-width: $breakpoint-md) {
+        display: none;
     }
 }
