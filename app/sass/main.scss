@@ -1,6 +1,7 @@
 @import './header';
 @import './hero-section';
 @import './services';
+@import './projects';
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -24,4 +25,7 @@ body{
         color: #fff;
         background-color: $button-hover;
     }
+}
+.container{
+    max-width: 941px;
 }

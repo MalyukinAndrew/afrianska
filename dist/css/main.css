@@ -129,6 +129,74 @@ header {
       margin: 0 auto 40px auto;
       overflow: hidden; }
 
+.projects {
+  margin: 100px 0; }
+  .projects-caption {
+    align-items: center;
+    text-align: center;
+    color: #1F3F68;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px; }
+    @media (min-width: 768px) {
+      .projects-caption {
+        flex-direction: row;
+        text-align: left; } }
+    .projects-caption-title {
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 30px; }
+      @media (min-width: 768px) {
+        .projects-caption-title {
+          max-width: 30%;
+          margin-bottom: 0; } }
+    .projects-caption-description {
+      margin: 0;
+      max-width: 500px; }
+      @media (min-width: 768px) {
+        .projects-caption-description {
+          max-width: 540px; } }
+  .projects-images {
+    align-items: center;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 60px; }
+    @media screen and (min-width: 768px) {
+      .projects-images {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 768px) {
+      .projects-images div:first-child {
+        grid-column: 1 / 3; } }
+    .projects-images-item {
+      position: relative;
+      border-radius: 10px;
+      width: 100%;
+      height: 417px;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .projects-images-item--home {
+        background-image: url(../img/our-project.png); }
+      .projects-images-item--app {
+        background-image: url(../img/sparklite.png); }
+      .projects-images-item--car {
+        background-image: url(../img/car.png); }
+    .projects-images-caption {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      text-align: right; }
+      .projects-images-caption--left {
+        text-align: left;
+        left: 50px;
+        right: initial; }
+      .projects-images-caption--title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 28px; }
+      .projects-images-caption--description {
+        opacity: 0.8; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
@@ -147,3 +215,6 @@ body {
     text-decoration: none;
     color: #fff;
     background-color: #356EAD; }
+
+.container {
+  max-width: 941px; }
