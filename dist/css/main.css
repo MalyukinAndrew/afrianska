@@ -91,6 +91,44 @@ header {
     .hero-wrapper {
       text-align: left; } }
 
+.services {
+  margin-top: 180px; }
+  .services h2 {
+    color: #316099;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px; }
+  .services h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F3F68; }
+  .services p {
+    color: #1F3F68; }
+  .services a {
+    text-decoration: none;
+    color: #5A98D0; }
+    .services a:hover {
+      color: #356EAD; }
+  .services-wrapper {
+    position: relative; }
+  .services-cards {
+    position: initial;
+    margin-top: 30px; }
+    @media (min-width: 768px) {
+      .services-cards {
+        position: absolute;
+        top: 0;
+        margin: 0; } }
+  .services-cards-item {
+    margin-bottom: 100px;
+    padding: 48px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px; }
+    .services-cards-item img {
+      display: block;
+      margin: 0 auto 40px auto;
+      overflow: hidden; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
