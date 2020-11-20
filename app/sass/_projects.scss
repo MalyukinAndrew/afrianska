@@ -27,6 +27,7 @@
         &-description {
             margin: 0;
             max-width: 500px;
+            opacity: 60%;
 
             @media (min-width: $breakpoint-md) {
                 max-width: 540px;
