@@ -1,0 +1,59 @@
+.work {
+    color: white;
+    background-color: $button-color;
+    z-index: -4;
+
+    &-wrapper {
+        position: relative;
+        padding-top: 110px;
+        background-color: $secondary-color;
+        border-radius: 0 200px 0 0;
+        padding-bottom: 60px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0%;
+            left: -1000%;
+            background-color: #316099;
+            width: 1000%;
+            height: 100%;
+        }
+    }
+
+    &-button {
+        display: block;
+        margin: 0 auto;
+        width: 226px;
+    }
+
+    &-caption {
+        margin-bottom: 60px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        &-description{
+            opacity: 60%;
+        }
+    }
+}
+
+.divider {
+    height: 1px;
+    width: calc(100% - 25%);
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    margin-top: 20px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -1000%;
+        height: 1px;
+        width: 1000%;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+    }
+}

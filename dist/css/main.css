@@ -73,7 +73,8 @@ header {
     padding: 0;
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 71px; }
+    margin-bottom: 71px;
+    opacity: 60%; }
     @media (min-width: 768px) {
       .hero-wrapper__description {
         max-width: 425px; } }
@@ -148,7 +149,8 @@ header {
           margin-bottom: 0; } }
     .projects-caption-description {
       margin: 0;
-      max-width: 500px; }
+      max-width: 500px;
+      opacity: 60%; }
       @media (min-width: 768px) {
         .projects-caption-description {
           max-width: 540px; } }
@@ -193,6 +195,170 @@ header {
       .projects-images-caption--description {
         opacity: 0.8; }
 
+.clients {
+  padding: 100px 0;
+  background-color: #5A98D0;
+  border-radius: 200px 0 0 0; }
+  .clients-caption {
+    align-items: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px; }
+    @media (min-width: 768px) {
+      .clients-caption {
+        flex-direction: row;
+        text-align: left; } }
+    .clients-caption-title {
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 30px; }
+      @media (min-width: 768px) {
+        .clients-caption-title {
+          max-width: 30%;
+          margin-bottom: 0; } }
+    .clients-caption-description {
+      margin: 0;
+      max-width: 500px;
+      opacity: 60%; }
+      @media (min-width: 768px) {
+        .clients-caption-description {
+          max-width: 540px; } }
+  .clients-logos {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    color: white;
+    grid-gap: 1px;
+    background-color: rgba(255, 255, 255, 0.3); }
+    @media (min-width: 768px) {
+      .clients-logos {
+        grid-template-columns: repeat(4, 1fr); } }
+    .clients-logos-item {
+      padding: 40px;
+      font-size: 20px;
+      text-transform: uppercase;
+      background-color: #5A98D0; }
+
+.logo8 {
+  background-color: rgba(31, 63, 104, 0.7); }
+
+.work {
+  color: white;
+  background-color: #5A98D0;
+  z-index: -4; }
+  .work-wrapper {
+    position: relative;
+    padding-top: 110px;
+    background-color: #316099;
+    border-radius: 0 200px 0 0;
+    padding-bottom: 60px; }
+    .work-wrapper:before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: -1000%;
+      background-color: #316099;
+      width: 1000%;
+      height: 100%; }
+  .work-button {
+    display: block;
+    margin: 0 auto;
+    width: 226px; }
+  .work-caption {
+    margin-bottom: 60px; }
+    .work-caption-title {
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 30px; }
+    .work-caption-description {
+      opacity: 60%; }
+
+.divider {
+  height: 1px;
+  width: calc(100% - 25%);
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  position: relative; }
+  .divider:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1000%;
+    height: 1px;
+    width: 1000%;
+    background-color: rgba(255, 255, 255, 0.2); }
+
+.footer {
+  background-color: #5A98D0;
+  color: white;
+  line-height: 2; }
+  .footer-wrapper {
+    padding-bottom: 40px;
+    background-color: #316099;
+    position: relative; }
+    .footer-wrapper:before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: -1000%;
+      background-color: #316099;
+      width: 1000%;
+      height: 100%; }
+  .footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .footer li a {
+    color: white;
+    text-decoration: none; }
+    .footer li a:hover {
+      color: #5A98D0; }
+  .footer p {
+    font-size: 20px;
+    font-weight: 600; }
+  .footer-logo {
+    font-size: 28px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white; }
+    .footer-logo:hover {
+      text-decoration: none;
+      color: #5A98D0; }
+  .footer-first-col {
+    padding-left: 25px; }
+
+.address {
+  position: relative; }
+  .address:before {
+    content: 'A.';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    font-weight: 600; }
+
+.phone {
+  position: relative; }
+  .phone:before {
+    content: 'T.';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    font-weight: 600; }
+
+.mail {
+  position: relative; }
+  .mail:before {
+    content: 'E.';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    font-weight: 600; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
@@ -205,6 +371,7 @@ body {
   color: #fff;
   padding: 20px 55px;
   border-radius: 10px;
+  border: none;
   background-color: #5A98D0;
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2); }
   .button:hover {
